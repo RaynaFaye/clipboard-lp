@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
-
+.screen-reader {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
