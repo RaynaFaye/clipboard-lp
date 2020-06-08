@@ -80,14 +80,21 @@ body {
   display: grid;
   grid-template-columns: 50% 2fr 1fr;
   grid-gap: 75px;
-  align-items: center;
   margin: 75px 0;
 }
 .snippets__image-block {
+  align-self: center;
   margin-left: -30px;
 }
 .snippets__image {
   width: 100%;
+}
+.snippets__facts__title {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.snippets__facts__paragraph {
+  margin: 10px 0;
 }
 /* Attribution section */
 .attribution {
@@ -147,8 +154,5 @@ body {
   }
   .snippets__image-block {
     margin-left: 0px;
-  }
-  .snippets__facts__title {
-    margin-top: 50px;
   }
 }
