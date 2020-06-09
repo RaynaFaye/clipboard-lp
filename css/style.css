@@ -145,8 +145,52 @@ body {
 .availability__buttons {
   margin-top: 50px;
 }
+/* Footer Section */
+.footer {
+  background: hsl(0, 0%, 93%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+.footer__logo {
+  width: 65%;
+}
+.footer__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer__menu__block {
+  margin-right: 100px;
+}
+.footer__menu__item {
+  margin-bottom: 25px;
+}
+.footer__menu__link {
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+}
+.footer__menu__link:hover,
+.footer__menu__link:focus {
+  color: hsl(171, 66%, 44%);
+}
+.footer__social-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer__social-link {
+  margin: 10px;
+}
+svg:hover path,
+a:focus svg path {
+  fill: #26baa4;
+}
 /* Attribution section */
 .attribution {
+  flex-basis: 100%;
   font-size: 11px;
   text-align: center;
 }
@@ -169,6 +213,22 @@ body {
   /* Tools section */
   .tools {
     margin: 0 50px 150px 50px;
+  }
+  /* Footer Section */
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .footer__logo {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__menu__block {
+    margin-right: 0;
   }
 }
 @media all and (max-width: 740px) {
