@@ -112,6 +112,20 @@ body {
 .clipboard__image {
   width: 100%;
 }
+/* Tools section */
+.tools {
+  text-align: center;
+  margin: 0 100px 150px 100px;
+}
+.tools__facts {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.tools__facts__image {
+  height: 32px;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
@@ -132,6 +146,10 @@ body {
   /* Clipboard section */
   .clipboard__image-block {
     width: 70%;
+  }
+  /* Tools section */
+  .tools {
+    margin: 0 50px 150px 50px;
   }
 }
 @media all and (max-width: 740px) {
@@ -175,5 +193,13 @@ body {
   }
   .clipboard__image-block {
     width: 100%;
+  }
+  /* Tools section */
+  .tools {
+    margin: 0 15px 100px 15px;
+  }
+  .tools__facts {
+    margin-top: 75px;
+    grid-template-columns: 1fr;
   }
 }
