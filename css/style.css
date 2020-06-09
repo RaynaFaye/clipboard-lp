@@ -69,7 +69,7 @@ body {
 .header__paragraph {
   width: 45%;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 /* Snippets section */
 .snippets {
@@ -136,6 +136,14 @@ body {
 }
 .companies__image {
   padding: 30px 40px;
+}
+/* Availability section */
+.availability {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.availability__buttons {
+  margin-top: 50px;
 }
 /* Attribution section */
 .attribution {
@@ -212,5 +220,12 @@ body {
   .tools__facts {
     margin-top: 75px;
     grid-template-columns: 1fr;
+  }
+  /* Availability section */
+  .availability {
+    padding: 0 15px;
+  }
+  .availability__title {
+    padding: 0 10px;
   }
 }
