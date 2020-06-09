@@ -126,6 +126,17 @@ body {
 .tools__facts__image {
   height: 32px;
 }
+/* Who we work with companies */
+.companies {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+.companies__image {
+  padding: 30px 40px;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
