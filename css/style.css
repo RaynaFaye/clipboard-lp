@@ -53,6 +53,10 @@ body {
 .button-mac:focus {
   outline: 1px dashed hsl(233, 100%, 69%);
 }
+.paragraph-width {
+  width: 50%;
+  margin: auto;
+}
 /* Header */
 .header {
   background: no-repeat url(../images/bg-header-desktop.png);
@@ -64,7 +68,8 @@ body {
 }
 .header__paragraph {
   width: 45%;
-  margin: 15px auto 30px auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 /* Snippets section */
 .snippets {
@@ -73,8 +78,7 @@ body {
 }
 .snippets__intro {
   text-align: center;
-  width: 45%;
-  margin: 150px auto 0 auto;
+  margin-top: 150px;
 }
 .snippets__facts-block {
   display: grid;
@@ -96,6 +100,18 @@ body {
 .snippets__facts__paragraph {
   margin: 10px 0;
 }
+/* Clipboard Section */
+.clipboard {
+  text-align: center;
+  margin-top: 75px;
+}
+.clipboard__image-block {
+  width: 60%;
+  margin: 75px auto;
+}
+.clipboard__image {
+  width: 100%;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
@@ -105,18 +121,17 @@ body {
   color: hsl(228, 45%, 44%);
 }
 @media all and (max-width: 980px) {
-  /* Header */
-  .header__paragraph {
+  .paragraph-width {
     width: 60%;
   }
   /* Snippets section */
-
-  .snippets__intro {
-    width: 60%;
-  }
   .snippets__facts-block {
     grid-template-columns: 50% 40%;
     grid-gap: 50px;
+  }
+  /* Clipboard section */
+  .clipboard__image-block {
+    width: 70%;
   }
 }
 @media all and (max-width: 740px) {
@@ -128,6 +143,9 @@ body {
     margin-bottom: 20px;
   }
   /* Header */
+  .paragraph-width {
+    width: auto;
+  }
   .header {
     background: no-repeat url(../images/bg-header-mobile.png);
     background-size: cover;
@@ -137,15 +155,11 @@ body {
   .header__title {
     font-size: 34px;
   }
-  .header__paragraph {
-    width: auto;
-  }
   /* Snippets section */
   .snippets {
     padding: 0 15px;
   }
   .snippets__intro {
-    width: auto;
     margin-top: 50px;
   }
   .snippets__facts-block {
@@ -154,5 +168,12 @@ body {
   }
   .snippets__image-block {
     margin-left: 0px;
+  }
+  /* Clipboard Section */
+  .clipboard {
+    padding: 0 15px;
+  }
+  .clipboard__image-block {
+    width: 100%;
   }
 }
